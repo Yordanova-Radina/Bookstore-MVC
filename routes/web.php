@@ -35,4 +35,6 @@ Route::get(
     [PostController::class, 'show']
 )->name('post.show');
 
-Route::get('/login', function () {})->name('login');
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
