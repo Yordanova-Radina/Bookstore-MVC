@@ -16,19 +16,9 @@ Route::get('/register', function () {
     return view('register');
 })->name('register');
 
-Route::post(
-    'user/store',
-    [UserController::class, 'store']
-)->name('user.store');
-
 Route::get('/posts/add', function () {
     return view('add-post');
 })->name('posts.add');
-
-Route::post(
-    '/post/store',
-    [PostController::class, 'store']
-)->name('posts.store');
 
 Route::get(
     '/post/show/{post}',
@@ -38,3 +28,13 @@ Route::get(
 Route::get('/login', function () {
     return view('login');
 })->name('login');
+
+Route::post(
+    'user/store',
+    [UserController::class, 'store']
+)->name('user.store');
+
+Route::post(
+    '/post/store',
+    [PostController::class, 'store']
+)->name('posts.store');
