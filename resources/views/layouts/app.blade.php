@@ -27,7 +27,7 @@
                 </p>
                 <div class="jumbotron">
                     @section('maincontent')
-                    @include('maincontent');
+                    @include('maincontent')
                     @show
 
 

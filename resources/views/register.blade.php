@@ -55,7 +55,7 @@
     </div>
 
     <div class="container signin">
-        <p>Имате акаунт? <a href="#">Влезте в акаунта си</a>.</p>
+        <p>Имате акаунт? <a href="{{route('login')}}">Влезте в акаунта си</a>.</p>
     </div>
 </form>
 @endsection

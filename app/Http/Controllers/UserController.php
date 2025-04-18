@@ -9,17 +9,19 @@ use function Laravel\Prompts\password;
 
 class UserController extends Controller
 {
-    //
-
-    function store(Request $request)
+    public function store(Request $request)
     {
-        $validated = request()->validate([
-            'email' => 'required|max:100|email',
-            'name' => 'required',
-            'password' => 'required|min:3',
-            'psw-repeat' => 'required|min:3|same:password'
+        $request->validate([
+            'email' => 'required|email|max:100|unique:users,email',
+            'name' => 'required|string|max:255',
+            'password' => 'required|min:6|confirmed',
+            'psw-repeat' => 'required|min:6|same:password',
         ]);
-        User::create($validated);
+        User::create([
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'password' => bcrypt($request->input('password')),
+        ]);
         return back()->with('success', 'Потребителят е записан в базата данни');
     }
 }

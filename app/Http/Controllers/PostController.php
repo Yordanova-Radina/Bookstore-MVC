@@ -32,7 +32,7 @@ class PostController extends Controller
     public function store(StorePostRequest $request)
     {
         //
-        User::create($request->validated());
+        Post::create($request->validated());
         return back()->with('success', 'Отзивът е добавен в базата данни');
     }
 
