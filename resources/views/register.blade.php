@@ -11,39 +11,39 @@
         </div>
         @endif
 
-        <h1>Register</h1>
-        <p>Please fill in this form to create an account.</p>
+        <h1>Регистрация</h1>
+        <p>Моля, попълнете формата по-долу, за да създадете своя акаунт.</p>
         <hr>
 
         @error('name')
         <p class="alert-danger">{{ $errors->first('name') }} </p>
         @enderror
 
-        <label for="name"><b>Name</b></label>
-        <input type="text" value="{{old('name')}}" placeholder="Enter name" name="name" id="name" required>
+        <label for="name"><b>Име</b></label>
+        <input type="text" value="{{old('name')}}" placeholder="Въведете своето име" name="name" id="name" required>
 
         @error('email')
         <p class="alert-danger">{{ $errors->first('email') }} </p>
         @enderror
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" value="{{old('email')}}" placeholder="Enter Email" name="email" id="email" required>
+        <label for="email"><b>Имейл</b></label>
+        <input type="text" value="{{old('email')}}" placeholder="Въведете своя имейл адрес" name="email" id="email" required>
 
         @error('password')
         <p class="alert-danger">{{ $errors->first('password') }} </p>
         @enderror
 
-        <label for="password"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" id="password" required>
+        <label for="password"><b>Парола</b></label>
+        <input type="password" placeholder="Въведете парола" name="password" id="password" required>
 
         @error('psw-repeat')
         <p class="alert-danger">{{ $errors->first('psw-repeat') }} </p>
         @enderror
 
-        <label for="psw-repeat"><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <label for="psw-repeat"><b>Повтори парола</b></label>
+        <input type="password" placeholder="Повторете парола" name="psw-repeat" id="psw-repeat" required>
         <hr>
-        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <p>С избор за създаване на акаунт, Вие се съгласявате с нашите <a href="#">Политики за сигурност</a>.</p>
         @if (Session::has('success'))
         <div class="alert alert-success">
             {{Session::get('success') }}
@@ -51,11 +51,11 @@
         @endif
 
 
-        <button type="submit" class="registerbtn">Register</button>
+        <button type="submit" class="registerbtn">Регистрация</button>
     </div>
 
     <div class="container signin">
-        <p>Already have an account? <a href="#">Sign in</a>.</p>
+        <p>Имате акаунт? <a href="#">Влезте в акаунта си</a>.</p>
     </div>
 </form>
 @endsection

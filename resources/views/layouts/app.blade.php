@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Китари</title>
+    <title>Светлина</title>
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/offcanvas.css') }}" rel="stylesheet" />
 </head>

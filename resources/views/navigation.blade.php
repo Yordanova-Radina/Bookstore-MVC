@@ -1,7 +1,7 @@
 <nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Китари</a>
+            <a class="navbar-brand" href="#">Светлина</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -12,7 +12,7 @@
                     <a href="{{route('aboutus')}}">За нас</a>
                 </li>
                 <li class="{{ Route::currentRouteName()== 'posts.add' ? 'active' : '' }}">
-                    <a href="{{ route('posts.add') }}">Добави пост</a>
+                    <a href="{{ route('posts.add') }}">Добави отзив</a>
                 </li>
                 <li class="{{ Route::currentRouteName()== 'register' ? 'active' : '' }}">
                     <a href="{{route('register')}}">Регистрация</a>
@@ -20,8 +20,6 @@
                 <li class="{{ Route::currentRouteName()== 'login' ? 'active' : '' }}">
                     <a href="{{route('login')}}">Вход</a>
                 </li>
-
-
             </ul>
         </div>
     </div>
