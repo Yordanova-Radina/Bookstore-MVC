@@ -1,6 +1,6 @@
 html,
 body {
-    overflow-x: hidden; /* Prevent scroll on narrow devices */
+    overflow-x: hidden; 
 }
 
 html{
@@ -10,7 +10,6 @@ html{
 body {
     background-position: center;
     background-repeat: no-repeat;
-    /* Премахнато е padding-top */
 }
 
 footer {
@@ -39,25 +38,25 @@ footer {
     }
 
     .row-offcanvas-right .sidebar-offcanvas {
-        right: -50%; /* 6 columns */
+        right: -50%; 
     }
 
     .row-offcanvas-left .sidebar-offcanvas {
-        left: -50%; /* 6 columns */
+        left: -50%; 
     }
 
     .row-offcanvas-right.active {
-        right: 50%; /* 6 columns */
+        right: 50%; 
     }
 
     .row-offcanvas-left.active {
-        left: 50%; /* 6 columns */
+        left: 50%; 
     }
 
     .sidebar-offcanvas {
         position: absolute;
         top: 0;
-        width: 50%; /* 6 columns */
+        width: 50%; 
     }
 }
 
@@ -130,9 +129,9 @@ textarea:focus {
 }
 
 .navbar-custom {
-    background-color: #fcbf49; /* между жълто и оранжево */
+    background-color: #fcbf49; 
     border: none;
-    margin-bottom: 0; /* Премахнато разстояние под навбара */
+    margin-bottom: 0;
 }
 
 .navbar-custom .navbar-brand,
@@ -142,6 +141,6 @@ textarea:focus {
 
 .navbar-custom .nav > li > a:hover,
 .navbar-custom .nav > .active > a {
-    background-color: #f77f00; /* по-наситен нюанс при hover/active */
+    background-color: #f77f00; 
     color: #fff;
 }
